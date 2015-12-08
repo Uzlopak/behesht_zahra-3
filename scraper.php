@@ -64,7 +64,7 @@ for ($id = 600001; $id <= 900000; $id++) {
   }
 }
 function ripById($id){
-	$pathToDetails = 'http://www.beheshtezahra.ir/Default.aspx?tabid=92&ctl=SearchDetails&mid=653&srid=' . $id;
+	$pathToDetails = 'http://beheshtezahra.tehran.ir/Default.aspx?tabid=92&ctl=SearchDetails&mid=653&srid=' . $id;
 	
 	$output = scraperwiki::scrape($pathToDetails);
 	$firstnamepattern = '/<span id="dnn_ctr653_SearchDetails_dtlDetail_lblNameBound_0"><b>(.*)<\//smiU';
